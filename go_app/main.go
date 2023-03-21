@@ -22,6 +22,6 @@ func main() {
 
 	// output
 	fmt.Println("Your info is:", firstName, "age", age, ".")
-  
+
 	fmt.Println("\nDone.")
 }
