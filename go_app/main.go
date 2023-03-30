@@ -9,19 +9,21 @@ import "fmt"
 
 func main() {
 	// This function does addition
-	var houseNumber string
-	var streetNumber int
+	var houseNumber int
+	var streetName string
 
 	// input
 	fmt.Println("This program finds your address.")
 	fmt.Println()
 	fmt.Print("Enter your house number: ")
 	fmt.Scanln(&houseNumber)
+	fmt.Println()
 	fmt.Print("Enter your street number: ")
-	fmt.Scanln(&streetNumber)
+	fmt.Scanln(&streetName)
 
 	// output
-	fmt.Println("Your address is:", houseNumber, streetNumber, ".")
+	fmt.Println()
+	fmt.Println("Your address is:", houseNumber, streetName)
 
 	fmt.Println("\nDone.")
 }

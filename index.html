@@ -35,11 +35,6 @@
       <main class="mdl-layout__content">
         <div>
           <img src="./images/street.jpg" alt="calculator" />
-          <style>
-            img {
-              float: right;
-            }
-          </style>
         </div>
         <br />
         <form action="#">
@@ -48,12 +43,11 @@
           <br />
           <p>House Number</p>
           <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="house-number"
-            />
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="house-number" />
+            <label class="mdl-textfield__label" for="house-number">
+              Enter a number ...
+            </label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
           <br />
           <br />
@@ -64,9 +58,7 @@
             <label class="mdl-textfield__label" for="street-name">Street Name ...</label>
           </div>
         </form>
-
         <!-- Colored raised button -->
-
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
           onclick="myButtonClicked()"
@@ -80,8 +72,3 @@
     </div>
   </body>
 </html>
-          <label class="mdl-textfield__label" for="house-number"
-              >House Number ...</label
-            >
-            <span class="mdl-textfield__error">Input is not a number!</span>
-  
